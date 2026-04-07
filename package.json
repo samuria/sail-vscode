@@ -25,6 +25,13 @@
         "scopeName": "source.sail",
         "path": "./syntaxes/sail.tmLanguage.json"
       }
+    ],
+    "themes": [
+      {
+        "label": "Appian SAIL",
+        "uiTheme": "vs",
+        "path": "./themes/appian-sail-color-theme.json"
+      }
     ]
   }
 }
