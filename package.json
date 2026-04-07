@@ -4,6 +4,7 @@
   "description": "Syntax highlighting and formatting for Appian SAIL (.sail) files",
   "version": "0.1.0",
   "publisher": "sail-vscode",
+  "icon": "images/icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",
