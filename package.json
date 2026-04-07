@@ -3,13 +3,31 @@
   "displayName": "SAIL Language Support",
   "description": "Syntax highlighting and formatting for Appian SAIL (.sail) files",
   "version": "0.1.0",
-  "publisher": "dit-appian",
+  "publisher": "sail-vscode",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sail-vscode/sail-vscode"
+  },
+  "keywords": ["sail", "appian", "syntax highlighting", "formatter"],
+  "type": "commonjs",
   "engines": {
     "vscode": "^1.75.0"
   },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.5.4"
+  },
   "categories": ["Programming Languages", "Formatters"],
   "activationEvents": ["onLanguage:sail"],
-  "main": "./src/extension.js",
+  "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {

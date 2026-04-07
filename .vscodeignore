@@ -1,0 +1,8 @@
+src/**
+examples/**
+.vscode/**
+.git/**
+node_modules/**
+tsconfig.json
+*.ts
+!out/**
