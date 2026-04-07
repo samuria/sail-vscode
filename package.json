@@ -26,12 +26,21 @@
         "path": "./syntaxes/sail.tmLanguage.json"
       }
     ],
-    "themes": [
-      {
-        "label": "Appian SAIL",
-        "uiTheme": "vs",
-        "path": "./themes/appian-sail-color-theme.json"
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          { "scope": "comment.block.sail", "settings": { "foreground": "#50B900" } },
+          { "scope": "string.quoted.double.sail", "settings": { "foreground": "#9269C9" } },
+          { "scope": "constant.character.escape.sail", "settings": { "foreground": "#9269C9" } },
+          { "scope": ["variable.other.local.sail", "variable.other.local.prefix.sail", "variable.parameter.sail", "variable.parameter.prefix.sail", "variable.parameter.keyword.sail", "variable.other.fv.sail", "variable.other.fv.prefix.sail", "variable.other.process.sail", "variable.other.process.prefix.sail", "variable.language.save.sail", "variable.language.save.prefix.sail"], "settings": { "foreground": "#24B0ED" } },
+          { "scope": ["support.function.sail", "support.function.prefix.sail", "support.function.builtin.sail", "support.function.system.sail", "entity.name.function.sail", "entity.name.function.prefix.sail"], "settings": { "foreground": "#005BD0" } },
+          { "scope": ["entity.name.function.rule.sail", "variable.other.constant.sail", "variable.other.constant.prefix.sail", "entity.name.function.uuid-rule.sail"], "settings": { "foreground": "#FF812B" } },
+          { "scope": ["support.type.record.sail", "support.type.record-field.sail", "support.type.record-relationship.sail", "support.type.urn.sail", "entity.name.tag.sail"], "settings": { "foreground": "#FF812B" } },
+          { "scope": "entity.name.type.sail", "settings": { "foreground": "#9269C9" } },
+          { "scope": ["constant.language.boolean.sail", "constant.language.null.sail"], "settings": { "foreground": "#999999" } },
+          { "scope": "constant.numeric.sail", "settings": { "foreground": "#005BD0" } }
+        ]
       }
-    ]
+    }
   }
 }
