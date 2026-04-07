@@ -2,6 +2,8 @@
 
 Syntax highlighting and document formatting for Appian SAIL (.sail) files. Supports `a!`, `rule!`, `fn!`, `cons!` functions, all variable prefixes (`local!`, `ri!`, `fv!`, etc.), record type URNs, strings, comments, and more.
 
+![Screenshot](images/screenshot.png)
+
 ## Installation
 
 ### From source
