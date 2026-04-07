@@ -1,0 +1,30 @@
+{
+  "name": "sail-language",
+  "displayName": "SAIL Language Support",
+  "description": "Syntax highlighting and formatting for Appian SAIL (.sail) files",
+  "version": "0.1.0",
+  "publisher": "dit-appian",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages", "Formatters"],
+  "activationEvents": ["onLanguage:sail"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "sail",
+        "aliases": ["SAIL", "sail", "Appian SAIL"],
+        "extensions": [".sail"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sail",
+        "scopeName": "source.sail",
+        "path": "./syntaxes/sail.tmLanguage.json"
+      }
+    ]
+  }
+}
