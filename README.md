@@ -6,6 +6,12 @@ Syntax highlighting and document formatting for Appian SAIL (.sail) files. Suppo
 
 ## Installation
 
+### From .vsix file
+
+1. Download the latest `.vsix` from the [releases page](https://github.com/samuria/sail-vscode/releases)
+2. In VS Code, open the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+3. Run "Extensions: Install from VSIX..." and select the file
+
 ### From source
 
 1. Clone this repository
@@ -14,12 +20,6 @@ Syntax highlighting and document formatting for Appian SAIL (.sail) files. Suppo
    - macOS/Linux: `~/.vscode/extensions/`
    - Windows: `%USERPROFILE%\.vscode\extensions\`
 4. Restart VS Code
-
-### From .vsix file
-
-1. Download the latest `.vsix` from the [releases page](https://github.com/samuria/sail-vscode/releases)
-2. In VS Code, open the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-3. Run "Extensions: Install from VSIX..." and select the file
 
 ## Usage
 
